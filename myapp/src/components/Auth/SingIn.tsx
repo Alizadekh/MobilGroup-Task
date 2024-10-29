@@ -61,7 +61,7 @@ const SignIn: React.FC = () => {
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
 
-    const { email, password, passwordValid } = state;
+    const { email, password } = state;
 
     if (!email || !password) {
       toast.warn("Please fill in all fields", { position: "top-right" });
